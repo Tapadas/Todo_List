@@ -1,3 +1,3 @@
 export default function Pagination() {
-  return <div>Pagination</div>;
+  return <div className="col d-flex align-items-end">Pagination</div>;
 }

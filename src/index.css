@@ -1,68 +1,90 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #067b95;
+  --primary-color-dark: #004555;
+  --primary-color-light: #ebe5fc;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --gray400: #ced4da;
+  --red700: #842029;
+  --red100: #f8d7da;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+html,
+body,
+#root {
+  height: 100%;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul {
+  list-style: none;
 }
 
-button {
+.frame {
+  background-color: var(--background-color);
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border: 1px solid var(--gray400);
+  box-shadow: 0px -5px 0px 0px #67c0c2;
+  gap: 16px;
+  padding: 32px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.tarefas {
+  width: 1100px;
+}
+
+.main-logo-container {
+  margin: 48px 0 48px 0;
+}
+
+.main-logo-container .logo {
+  height: 65px;
+  width: 347px;
+}
+
+.logo {
+  height: 32px;
+  width: 169px;
+}
+
+.logo img {
+  height: inherit;
+  width: inherit;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.btn {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--primary-color-dark);
+}
+
+.btn-excluir {
+  font-weight: bold;
+  color: var(--red700);
+  background: var(--red100);
+}
+
+.btn-excluir:hover {
+  color: #fff;
+  background: var(--red700);
+}
+
+.footer {
+  border-top: 1px solid var(--gray400);
+}
+
+.footer-content {
+  width: 1100px;
+  padding: 48px 0 48px 0;
+  gap: 32px;
 }
