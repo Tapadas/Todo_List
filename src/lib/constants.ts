@@ -10,7 +10,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 2,
-    startDate: "10/10/2023, 21:00",
+    startDate: "10/10/2023, 20:00",
     endDate: "-",
     title: "Falar com Filipe Zuzarte",
     done: false,

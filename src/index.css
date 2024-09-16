@@ -4,9 +4,13 @@
   --primary-color-light: #ebe5fc;
   --secondary-color: #6c757d;
   --background-color: #f8f9fa;
+  --gray700: #495057;
   --gray400: #ced4da;
+  --gray100: #f8f9fa;
   --red700: #842029;
   --red100: #f8d7da;
+  --white: #fff;
+  --green500: #198754;
 }
 
 html,
@@ -15,7 +19,6 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 ul {
@@ -33,6 +36,7 @@ ul {
 
 .tarefas {
   width: 1100px;
+  margin-bottom: 48px;
 }
 
 .main-logo-container {
@@ -58,23 +62,23 @@ ul {
   font-weight: bold;
 }
 
-.btn {
+.btn-custom {
   color: #fff;
   background: var(--primary-color);
 }
 
-.btn:hover {
+.btn-custom:hover {
   color: #fff;
   background: var(--primary-color-dark);
 }
 
-.btn-excluir {
+.btn-exclude {
   font-weight: bold;
   color: var(--red700);
   background: var(--red100);
 }
 
-.btn-excluir:hover {
+.btn-exclude:hover {
   color: #fff;
   background: var(--red700);
 }
@@ -87,4 +91,38 @@ ul {
   width: 1100px;
   padding: 48px 0 48px 0;
   gap: 32px;
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+.page-item .page-link,
+.dropdown {
+  border-radius: 5px;
+}
+
+.pagination {
+  --bs-pagination-color: var(--primary-color);
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: none;
+  --bs-pagination-active-color: var(--white);
+  --bs-pagination-hover-color: none;
+  --bs-pagination-focus-color: none;
+}
+
+.dropdown,
+.page-item.disabled .page-link {
+  background-color: var(--gray100);
+  border: 1px groove var(--bs-border-color);
+}
+
+.counter {
+  color: var(--gray700);
+}
+
+.toast {
+  background-color: var(--green500);
+  color: var(--white);
+  font-weight: bold;
 }
